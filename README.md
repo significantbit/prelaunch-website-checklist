@@ -5,7 +5,7 @@ A checklist for web projects that needs to be gone through before release.
 2. Metadata
     1. Opengraph
 3. Favicons
-4. Roles
+4. ARIA Landmark Roles
 5. Error pages
 6. Cookies
 7. Markup Validation
@@ -63,10 +63,17 @@ Documentation/resources:
 Use Favicons. A great tool for this is http://realfavicongenerator.net.
 
 
-## 4. Roles
+## 4. ARIA Landmark Roles
 
-_A list of ARIA roles that should be used. Not completed. Some research has to be made._
+- banner
+- complementary
+- contentinfo
+- main
+- navigation
+- search
+- form
 
+https://accessibility.oit.ncsu.edu/using-aria-landmarks-a-demonstration/
 
 ## 5. Error pages (404, 500)
 
