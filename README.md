@@ -54,9 +54,12 @@ Opengraph meta elements -- mainly for social media link sharing:
 
 Open graph:
 http://ogp.me/
+
 A Guide to Sharing for Webmasters (Facebook):
+
 https://developers.facebook.com/docs/sharing/webmasters#media
 Facebook sharing debugger:
+
 https://developers.facebook.com/tools/debug/
 
 
