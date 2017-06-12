@@ -52,8 +52,11 @@ Opengraph meta elements -- mainly for social media link sharing:
 - `<meta property="og:image:width" content="1200" />` - Image width in pixels
 - `<meta property="og:image:height" content="630" />` - Image height in pixels
 
+Open graph:
 http://ogp.me/
+A Guide to Sharing for Webmasters (Facebook):
 https://developers.facebook.com/docs/sharing/webmasters#media
+Facebook sharing debugger:
 https://developers.facebook.com/tools/debug/
 
 
