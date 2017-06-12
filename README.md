@@ -27,30 +27,30 @@ Most common example: `<html lang="sv-SE">`
 
 The site needs those in the `<head>`:
 
-- `title` -- the page title, every subpage has it's own (with the format `Page - (- Category) - Site name`)
-- `meta name="description"` -- a short paragraph (max 160 char) describing the content of main site, category or a single post
-- `<link rel="home" href="http://site.url">` -- a link to home root page
+- `title` - the page title, every subpage has it's own (with the format `Page - (- Category) - Site name`)
+- `meta name="description"` - a short paragraph (max 160 char) describing the content of main site, category or a single post
+- `<link rel="home" href="http://site.url">` - a link to home root page
 - `<meta name="viewport" content="width=device-width, initial-scale=1.0">` - [Don't disable zoom](http://adrianroselli.com/2015/10/dont-disable-zoom.html)
 
 Optional and ocassionaly beneficial tags:
 
-- `meta name="keywords"` -- a list of `, `-separated tags that describes the content
-- `meta name="author"` -- a list of `, `-separated names of main people involved in the project
-- `<link rel="author" href="humans.txt">` -- an url leading to the `humans.txt` file
+- `meta name="keywords"` - a list of `, `-separated tags that describes the content
+- `meta name="author"` - a list of `, `-separated names of main people involved in the project
+- `<link rel="author" href="humans.txt">` - an url leading to the `humans.txt` file
 
 
 ### 2.1. Opengraph
 
 Opengraph meta elements -- mainly for social media link sharing:
 
-- `<meta property="og:type" content="website">` -- the type of document, for the most projects it's "website"
-- `<meta property="og:site_name" content="name">` -- the name of the site, `Significant Bit`
-- `<meta property="og:title" content="title">` -- the same as in `<title>`
-- `<meta property="og:description" content="description">` -- the same as in meta description
-- `<meta property="og:url" content="http://site.url">` -- The page url
-- `<meta property="og:image" content="social-image-1200x630.png"/>` -- an image with dimensions 1200x630 px
-- `<meta property="og:image:width" content="1200" />` -- Image width in pixels
-- `<meta property="og:image:height" content="630" />` -- Image height in pixels
+- `<meta property="og:type" content="website">` - the type of document, for the most projects it's "website"
+- `<meta property="og:site_name" content="name">` - the name of the site, `Significant Bit`
+- `<meta property="og:title" content="title">` - the same as in `<title>`
+- `<meta property="og:description" content="description">` - the same as in meta description
+- `<meta property="og:url" content="http://site.url">` - The page url
+- `<meta property="og:image" content="social-image-1200x630.png"/>` - an image with dimensions 1200x630 px
+- `<meta property="og:image:width" content="1200" />` - Image width in pixels
+- `<meta property="og:image:height" content="630" />` - Image height in pixels
 
 http://ogp.me/
 https://developers.facebook.com/docs/sharing/webmasters#media
