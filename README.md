@@ -10,9 +10,8 @@ A checklist for web projects that needs to be gone through before release.
 6. Cookies
 7. Markup Validation
 8. Google Analytics
-9. Humans
-10. Futurefriendliness
-11. Performance
+9. Futurefriendliness
+10. Performance
 
 A good resource, available as a Chrome extension: http://webdevchecklist.com/
 
@@ -36,7 +35,6 @@ Optional and ocassionaly beneficial tags:
 
 - `<meta name="keywords">` - a list of `, `-separated tags that describes the content
 - `<meta name="author">` - a list of `, `-separated names of main people involved in the project
-- `<link rel="author" href="humans.txt">` - an url leading to the `humans.txt` file
 
 
 ### 2.1. Opengraph
@@ -94,21 +92,14 @@ Some markup validation could always be good, https://validator.w3.org/.
 Set up a Google Analytics account on info@significantbit.se. If the projects client has its own Google Analytics, ask for an invite to theirs so we can have access to all website data through info@significantbit.se.
 
 
-## 9. Humans
-
-Introduction and being thankful in the `humans.txt` file.
-
-http://humanstxt.org/
-
-
-## 10. Futurefriendliness
+## 9. Futurefriendliness
 
 A `README.md` with the page maintenace, update and inner workings explained. If the project is going to be setup by a not-so-technical colleague (like a designer, hehe) a brief "how to install/run" would be great. 
 
 However, don't be very specific -- your HTML markup, SCSS styles and JavaScript scripts should be semantic and well commented instead.
 
 
-## 11. Performance
+## 10. Performance
 
 1. Run some overall tests:
 - [PageSpeed Insights](http://developers.google.com/speed/pagespeed/insights/)
