@@ -77,6 +77,7 @@ https://accessibility.oit.ncsu.edu/using-aria-landmarks-a-demonstration/
 
 Include pages for error pages such as 404 and 500. Make sure the styling is similar to the main site and give a brief description about what might have went wrong.
 
+Also use an error/exception reporting service, like Honeybadger.
 
 ## 6. Cookies
 
