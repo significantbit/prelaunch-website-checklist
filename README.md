@@ -83,6 +83,43 @@ Also use an error/exception reporting service, like Honeybadger.
 
 We need to inform visitors if the site uses cookies.
 
+For this we can use an npm library called cookieconsent.
+
+### To add this on a website, follow these steps:
+
+- Step 1: install the npm package:
+run `yarn add cookieconsent` OR `npm install cookieconsent` depending on package handler
+
+- Step 2: import the css: 
+Add the line `@import '~cookieconsent/build/cookieconsent.min.css';` 
+in the main css/sass file where other styles are imported
+
+- Step 3: Style it:
+Go to https://cookieconsent.insites.com/download/ and style the cookieconsent popup as you like
+
+- Step 4: Initialize it in the project:
+add this part of the code generated in the browser somewhere where javascript is run
+```
+import cookieconsent from 'cookieconsent';
+window.addEventListener("load", function(){
+  window.cookieconsent.initialise({
+    "palette": {
+      "popup": {
+        "background": "#216942",
+        "text": "#b2d192"
+      },
+      "button": {
+        "background": "transparent",
+        "text": "#afed71",
+        "border": "#afed71"
+      }
+    },
+    "position": "top",
+    "static": true
+  })
+});
+```
+
 ## 7. Markup Validation
 
 Some markup validation could always be good, https://validator.w3.org/. 
