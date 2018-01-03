@@ -29,7 +29,7 @@ The site needs those in the `<head>`:
 - `<title>` - the page title, every subpage has it's own (with the format `Page - (- Category) - Site name`)
 - `<meta name="description">` - a short paragraph (max 160 char) describing the content of main site, category or a single post
 - `<link rel="home" href="http://site.url">` - a link to home root page
-- `<meta name="viewport" content="width=device-width, initial-scale=1.0">` - [Don't disable zoom](http://adrianroselli.com/2015/10/dont-disable-zoom.html)
+- `<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">` - [Don't disable zoom](http://adrianroselli.com/2015/10/dont-disable-zoom.html)
 
 Optional and ocassionaly beneficial tags:
 
