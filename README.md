@@ -5,21 +5,23 @@ A checklist for web projects that needs to be gone through before release.
 2. Metadata
     1. Opengraph
 3. Favicons
-4. ARIA Landmark Roles
+4. Accessibility
 5. Error pages
 6. Cookies
 7. Markup Validation
-8. Google Analytics
-9. Futurefriendliness
-10. Performance
+8. Tracking codes (Google Analytics, Facebook Pixels etc)
+9. Performance
+10. SSL/HTTPS
+11. Robots.txt
+12. Documentation
 
 A good resource, available as a Chrome extension: http://webdevchecklist.com/
 
 ## 1. Language
 
-A `<html>` element at the top of your document should have the language specified. Remember about proper language codes: `en-US`, `sv-SE`, etc.
+The `<html>` element at the top of your document should have the language specified. Remember about proper language codes: `en-US`, `sv-SE`, etc.
 
-Most common example: `<html lang="sv-SE">`
+Example: `<html lang="sv-SE">`
 
 
 ## 2. Metadata
@@ -54,6 +56,7 @@ Documentation/resources:
 - [Open graph](http://ogp.me/)
 - [A Guide to Sharing for Webmasters (Facebook)](https://developers.facebook.com/docs/sharing/webmasters#media)
 - [Facebook sharing debugger](https://developers.facebook.com/tools/debug/)
+- [Open Graph Preview (Chrome Extension)](https://chrome.google.com/webstore/detail/open-graph-preview/ehaigphokkgebnmdiicabhjhddkaekgh)
 
 
 ## 3. Favicons
@@ -61,17 +64,13 @@ Documentation/resources:
 Use Favicons. A great tool for this is http://realfavicongenerator.net.
 
 
-## 4. ARIA Landmark Roles
+## 4. Accessibility
 
-- banner
-- complementary
-- contentinfo
-- main
-- navigation
-- search
-- form
+Resources:
+- [WCAG 2.1](https://www.w3.org/TR/WCAG21/)
+- [web.dev/measure](https://web.dev/measure/)
+- [WAVE Evaluation Tool (Chrome Extension)](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh)
 
-https://accessibility.oit.ncsu.edu/using-aria-landmarks-a-demonstration/
 
 ## 5. Error pages (404, 500)
 
@@ -79,69 +78,46 @@ Include pages for error pages such as 404 and 500. Make sure the styling is simi
 
 Also use an error/exception reporting service, like Honeybadger.
 
+
 ## 6. Cookies
 
 We need to inform visitors if the site uses cookies.
 
-For this we can use an npm library called cookieconsent.
-
-### To add this on a website, follow these steps:
-
-- Step 1: install the npm package:
-run `yarn add cookieconsent` OR `npm install cookieconsent` depending on package handler
-
-- Step 2: import the css: 
-Add the line `@import '~cookieconsent/build/cookieconsent.min.css';` 
-in the main css/sass file where other styles are imported
-
-- Step 3: Style it:
-Go to https://cookieconsent.insites.com/download/ and style the cookieconsent popup as you like
-
-- Step 4: Initialize it in the project:
-add this part of the code generated in the browser somewhere where javascript is run
-```
-import cookieconsent from 'cookieconsent';
-window.addEventListener("load", function(){
-  window.cookieconsent.initialise({
-    "palette": {
-      "popup": {
-        "background": "#216942",
-        "text": "#b2d192"
-      },
-      "button": {
-        "background": "transparent",
-        "text": "#afed71",
-        "border": "#afed71"
-      }
-    },
-    "position": "top",
-    "static": true
-  })
-});
-```
 
 ## 7. Markup Validation
 
-Some markup validation could always be good, https://validator.w3.org/. 
+Make sure to fix all invalid markup.
+
+Resources:
+- https://validator.w3.org/
+- https://validator.nu/
 
 
-## 8. Google Analytics
+## 8. Tracking codes (Google Analytics, Facebook Pixels etc)
 
-Set up a Google Analytics account on info@significantbit.se. If the projects client has its own Google Analytics, ask for an invite to theirs so we can have access to all website data through info@significantbit.se.
+Set up all appropriate tracking codes.
 
-
-## 9. Futurefriendliness
-
-A `README.md` with the page maintenace, update and inner workings explained. If the project is going to be setup by a not-so-technical colleague (like a designer, hehe) a brief "how to install/run" would be great. 
-
-However, don't be very specific -- your HTML markup, SCSS styles and JavaScript scripts should be semantic and well commented instead.
+Resources:
+- [Facebook Pixel Helper (Chrome Extension)](https://developers.facebook.com/docs/facebook-pixel/support/pixel-helper)
 
 
-## 10. Performance
+## 9. Performance
 
-1. Run some overall tests:
+Make sure the site has good performance.
+
+Resources:
 - [PageSpeed Insights](http://developers.google.com/speed/pagespeed/insights/)
 - [Web Page Performance Test](http://www.webpagetest.org/)
-2. Optimize images with [TinyPNG](https://tinypng.com/) or similar 
-3. Check accessibility at tiny screens
-4. Check links and interactive elements for `fat-fingers`
+- [web.dev/measure](https://web.dev/measure/)
+
+## 10. SSL/HTTPS
+
+All sites should be protected with HTTPS, even ones that don't handle sensitive data. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. 
+
+## 11. Robots.txt
+
+Add a robots.txt file to inform search engine spiders how to interact with indexing your content.
+
+## 12. Documentation
+
+A `README.md` with the page maintenance, installation instructions and inner workings explained. However, don't be too specific. Your HTML markup, SCSS styles and JavaScript should be semantic and well commented on its own.
