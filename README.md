@@ -12,6 +12,7 @@ A checklist for web projects that needs to be gone through before release.
 1. Tracking codes (Google Analytics, Facebook Pixels etc)
 1. Performance
 1. SSL/HTTPS
+1. Security headers
 1. Robots.txt
 1. Documentation
 
@@ -27,6 +28,10 @@ A checklist for web projects that needs to be gone through before release.
 **Performance**
 
 [PageSpeed Insights](http://developers.google.com/speed/pagespeed/insights/), [webpagetest.org](http://www.webpagetest.org/), [web.dev/measure](https://web.dev/measure/)
+
+**Security**
+
+[securityheaders.com](https://securityheaders.com/)
 
 **Open graph/sharing**
 
@@ -135,10 +140,14 @@ Resources:
 
 All sites should be protected with HTTPS, even ones that don't handle sensitive data. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. 
 
-## 11. Robots.txt
+## 11. Security headers
+
+Deploy security response headers. Security headers audit can be done at [securityheaders.com](https://securityheaders.com/).
+
+## 12. Robots.txt
 
 Add a robots.txt file to inform search engine spiders how to interact with indexing your content.
 
-## 12. Documentation
+## 13. Documentation
 
 A `README.md` with the page maintenance, installation instructions and inner workings explained. However, don't be too specific. Your HTML markup, SCSS styles and JavaScript should be semantic and well commented on its own.
