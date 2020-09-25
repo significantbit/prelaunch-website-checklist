@@ -2,20 +2,41 @@
 A checklist for web projects that needs to be gone through before release.
 
 1. Language
-2. Metadata
+1. Metadata
     1. Opengraph
-3. Favicons
-4. Accessibility
-5. Error pages
-6. Cookies
-7. Markup Validation
-8. Tracking codes (Google Analytics, Facebook Pixels etc)
-9. Performance
-10. SSL/HTTPS
-11. Robots.txt
-12. Documentation
+1. Favicons
+1. Accessibility
+1. Error pages
+1. Cookies
+1. Markup Validation
+1. Tracking codes (Google Analytics, Facebook Pixels etc)
+1. Performance
+1. SSL/HTTPS
+1. Robots.txt
+1. Documentation
 
-A good resource, available as a Chrome extension: http://webdevchecklist.com/
+## Audit tools
+**General**
+
+[webdevchecklist.com](https://webdevchecklist.com), [web.dev/measure](https://web.dev/measure/)
+
+**Accessibility**
+
+[WAVE Evaluation Tool (Chrome Extension)](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh)
+
+**Performance**
+
+[PageSpeed Insights](http://developers.google.com/speed/pagespeed/insights/), [webpagetest.org](http://www.webpagetest.org/), [web.dev/measure](https://web.dev/measure/)
+
+**Open graph/sharing**
+
+[Facebook sharing debugger](https://developers.facebook.com/tools/debug/), [Open Graph Preview (Chrome Extension)](https://chrome.google.com/webstore/detail/open-graph-preview/ehaigphokkgebnmdiicabhjhddkaekgh)
+
+**Tracking/Analytics**
+
+[Facebook Pixel Helper (Chrome Extension)](https://developers.facebook.com/docs/facebook-pixel/support/pixel-helper)
+
+---
 
 ## 1. Language
 
